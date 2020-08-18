@@ -1,46 +1,40 @@
-const langs = [
-    { title: 'English', path: '/', matchPath: /^\/(home|contributors|ipls)/ },
-    { title: '中文', path: '/zh/', matchPath: /^\/zh/ },
-];
-
-docute.init({
-    title: 'Neptune Documentation',
-    nav: {
-        default: [
-            {
-                title: 'Home', path: '/'
-            },
-            {
-                title: 'Contributors', path: '/contributors'
-            },
-            {
-                title: 'Available IPLs', path: '/ipls'                
-            },
-            {
-                title: 'Languages', type: 'dropdown', items: langs                
-            }            
-        ],
-        'zh': [
-            {
-                title: '首页', path: '/zh/'
-            },
-            {
-                title: '贡献者', path: '/zh/contributors'
-            },
-            {
-                title: '可用物品放置场景', path: '/zh/ipls'               
-            },
-            {
-                title: '语言', type: 'dropdown', items: langs
-            }
-        ],
+new Docute({
+title: 'Neptune Documentation',
+  nav: [
+    {
+      title: 'Home',
+      link: '/'
     },
-    plugins: [
-        docsearch({
-            apiKey: '',
-            indexName: 'neptune',
-            tags: ['english', 'zh'],
-            url: 'https://docs.neptune.work'
-        }),
-    ]
-});
+    {
+      title: 'Blog',
+      link: 'https://www.neptune.work/blog'
+    },
+      ]
+  sidebar: [
+    {
+      children: [
+        { title: 'Home', link: '/' },
+        { title: 'Contributors', link: '/contributors' },
+        { title: 'Available IPLs', link: '/ipls' }
+      ]
+    }
+  ],
+  overrides: {
+    '/': {
+      language: 'English' // Used by the language dropdown menu in the sidebar
+    },
+    '/zh/': {
+      language: '中文',
+      // Override the default sidebar
+      sidebar: [
+        {
+          children: [
+            { title: '首页', link: '/zh/' },
+            { title: '贡献者', link: '/zh/contributors' },
+            { title: '可用物品放置场景', link: '/zh/ipls' }
+          ]
+        }
+      ]
+    }
+  }
+})
