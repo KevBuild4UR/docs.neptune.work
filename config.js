@@ -8,8 +8,8 @@ title: 'Neptune Documentation',
     {
       title: 'Blog',
       link: 'https://www.neptune.work/blog'
-    },
-      ]
+    }
+      ],
   sidebar: [
     {
       children: [
