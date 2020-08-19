@@ -1,4 +1,5 @@
 new Docute({
+target: 'doc',
 title: 'Neptune Documentation',
   nav: [
     {
@@ -37,4 +38,5 @@ title: 'Neptune Documentation',
       ]
     }
   }
+
 })
