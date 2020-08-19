@@ -1,6 +1,9 @@
 new Docute({
 target: 'doc',
 title: 'Neptune Documentation',
+router: {
+    mode: 'history'
+  },
   nav: [
     {
       title: 'Home',
