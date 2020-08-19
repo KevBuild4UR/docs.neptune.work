@@ -4,6 +4,8 @@ title: 'Neptune Documentation',
 router: {
     mode: 'history'
   },
+highlight: ['typescript', 'bash', 'json', 'markdown', 'c'],
+sourcePath: '/',
   nav: [
     {
       title: 'Home',
@@ -25,11 +27,10 @@ router: {
   ],
   overrides: {
     '/': {
-      language: 'English' // Used by the language dropdown menu in the sidebar
+      language: 'English' 
     },
     '/zh/': {
-      language: '中文',
-      // Override the default sidebar
+      language: '中文',      
       sidebar: [
         {
           children: [
@@ -41,5 +42,9 @@ router: {
       ]
     }
   }
+
+if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+}
 
 })
