@@ -17,9 +17,9 @@ router: {
   sidebar: [
     {
       children: [
-        { title: 'Home', link: '/' },
-        { title: 'Contributors', link: '/contributors' },
-        { title: 'Available IPLs', link: '/ipls' }
+        { title: 'Home', link: '/' },       
+        { title: 'Available IPLs', link: '/ipls' },
+        { title: 'Contributors', link: '/contributors' }
       ]
     }
   ],
@@ -34,8 +34,8 @@ router: {
         {
           children: [
             { title: '首页', link: '/zh/' },
-            { title: '贡献者', link: '/zh/contributors' },
-            { title: '可用物品放置场景', link: '/zh/ipls' }
+            { title: '可用物品放置场景', link: '/zh/ipls' },
+            { title: '贡献者', link: '/zh/contributors' }
           ]
         }
       ]
