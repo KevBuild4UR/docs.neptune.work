@@ -13,7 +13,7 @@ router: {
     mode: 'history'
   },
 cssVariables: {
-    accentColor: '#007bff'
+    accentColor: #007bff
   },
 highlight: ['typescript', 'bash', 'json', 'markdown', 'c'],
 sourcePath: '/',
