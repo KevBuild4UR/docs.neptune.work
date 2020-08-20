@@ -1,8 +1,19 @@
+import SearchBar from 'https://cdn.jsdelivr.net/npm/docute@4.23.3/lib/plugins/search/SearchBar.vue';
+export default {
+  name: 'search',
+  extend: function extend(api) {
+    api.registerComponent('header-right:start', SearchBar);
+  }
+};
+
 new Docute({
 target: 'doc',
 title: 'Neptune Documentation',
 router: {
     mode: 'history'
+  },
+cssVariables: {
+    accentColor: '#007bff'
   },
 highlight: ['typescript', 'bash', 'json', 'markdown', 'c'],
 sourcePath: '/',
