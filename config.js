@@ -13,7 +13,9 @@ router: {
     mode: 'history'
   },
 cssVariables: {
-    accentColor: #007bff
+  accentColor: '#007bff',
+  linkColor: '#007bff',
+  navLinkBorderColor: '#007bff'
   },
 highlight: ['typescript', 'bash', 'json', 'markdown', 'c'],
 sourcePath: '/',
