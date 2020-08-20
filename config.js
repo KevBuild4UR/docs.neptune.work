@@ -4,7 +4,7 @@ export default {
   extend: function extend(api) {
     api.registerComponent('header-right:start', SearchBar);
   }
-};
+}
 
 new Docute({
 target: 'doc',
