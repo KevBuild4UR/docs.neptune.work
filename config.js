@@ -1,10 +1,6 @@
 new Docute({
 target: 'doc',
 title: 'Neptune Documentation',
-router: {
-    mode: 'history'
-  },
-sourcePath: '/',
 cssVariables: {
   accentColor: '#007bff',
   linkColor: '#007bff',
