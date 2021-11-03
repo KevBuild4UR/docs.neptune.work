@@ -22,8 +22,7 @@ sourcePath: '/',
     {
       children: [
         { title: 'Home', link: '/' },       
-        { title: 'Available IPLs', link: '/ipls' },
-        { title: 'Contributors', link: '/contributors' }
+        { title: 'Available IPLs', link: '/ipls' }
       ]
     }
   ],
@@ -37,8 +36,7 @@ sourcePath: '/',
         {
           children: [
             { title: '首页', link: '/zh/' },
-            { title: '可用物品放置场景', link: '/zh/ipls' },
-            { title: '贡献者', link: '/zh/contributors' }
+            { title: '可用物品放置场景', link: '/zh/ipls' }
           ]
         }
       ]
