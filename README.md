@@ -70,7 +70,7 @@ When you encounter a situation where you cannot place the team start point or sp
 
 ### Team respawn point option in Capture creator
 
-> Attention
+> Attention<br>
 > The content is now no longer available.
 
 There is an unnamed tab between "Team Start Points" and "Team Capture Points" options of the Capture creator, it is the "Team Respawn Points" option. You can place team respawn points instead of respawn areas to respawn the player in any one of the Team Respawn Points you’ve placed.
