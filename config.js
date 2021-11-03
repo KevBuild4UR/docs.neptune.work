@@ -6,7 +6,12 @@ cssVariables: {
   linkColor: '#007bff',
   navLinkBorderColor: '#007bff'
   },
-highlight: ['typescript', 'bash', 'json', 'markdown', 'c'],
+highlight: ['json', 'markdown', 'c'],
+router: {
+    mode: 'history'
+  },
+detectSystemDarkTheme: true,
+darkThemeToggler: true,
 sourcePath: '/',
   nav: [
     {
@@ -44,3 +49,7 @@ sourcePath: '/',
   }
 
 })
+
+if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+}
