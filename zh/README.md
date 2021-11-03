@@ -70,6 +70,9 @@ Neptune 的功能主要是多版本通用功能。一般来说，即使游戏已
 
 ### 夺取制作器中的团队重生点选项
 
+> 注意<br>
+> 该内容目前已不再可用（未来可能会重新生效）。
+
 夺取制作器的“团队起始点”和“团队夺取点”选项之间有一个未命名的选项卡，它是“团队重生点”选项。您可以放置团队重生点而非重生区域，以在放置的任何团队重生点中重生玩家。
 
 ![There is an unnamed tab between "Team Start Points" and "Team Capture Points" options.](https://www.neptune.work/images/upload/teamrespawnpoint-1.jpg)
