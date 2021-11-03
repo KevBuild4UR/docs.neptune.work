@@ -7,9 +7,6 @@ cssVariables: {
   navLinkBorderColor: '#007bff'
   },
 highlight: ['json', 'markdown', 'c'],
-router: {
-    mode: 'history'
-  },
 detectSystemDarkTheme: true,
 darkThemeToggler: true,
 sourcePath: '/',
